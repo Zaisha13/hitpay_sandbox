@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HitPay Sandbox GCash Test</title>
+  <meta charset="UTF-8">
+  <title>HitPay Sandbox GCash Payment</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Pay ₱20 with GCash (Sandbox)</h2>
-    <button id="payButton">Pay Now</button>
+  <div class="container">
+    <h1>💸 GCash Payment (Sandbox)</h1>
+    <p>Enter an amount to test payment:</p>
+    <input type="number" id="amountInput" placeholder="Enter amount (₱)" min="1" step="1">
+    <button id="payButton">Pay with GCash</button>
+    <div id="message"></div>
+  </div>
 
-    <script src="payment.js"></script>
+  <script src="payment.js"></script>
 </body>
 </html>
